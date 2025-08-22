@@ -18,7 +18,7 @@ signal.signal(signal.SIGINT, lambda s, f: loop.create_task(should_exit.set()))
 
 async def sumit_boot():
     for all_module in ALL_MODULES:
-        importlib.import_module("Extractor.modules." + all_module)
+        importlib.import_module("modules." + all_module)
 
     print("» ʙᴏᴛ ᴅᴇᴘʟᴏʏ sᴜᴄᴄᴇssғᴜʟʟʏ ✨ 🎉")
     await idle()  # keeps the bot alive
